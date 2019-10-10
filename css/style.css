@@ -675,11 +675,7 @@ footer a:hover, footer a:active, footer a:focus {
   left: 47px;
   top: 0;
 }
-.col-12 {
-  -ms-flex: 0 0 100% !important;
-  flex: 0 0 100% !important;
-  max-width: 100% !important;
-}
+
 /* mq */
 
 @media only screen and (max-width:1440px) {
@@ -742,6 +738,14 @@ header.masthead {
 @media only screen and (max-width: 440px) {
   .copy {
     font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .col-12 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
   }
 }
 
