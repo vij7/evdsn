@@ -54,10 +54,13 @@ section h2 {
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
+  -webkit-transition: all .35s;
   transition: all .35s;
   font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 #mainNav .navbar-brand {
@@ -398,8 +401,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 /* main */
 
 .head-logo {
-  width: 150px;
-margin: 10px 0;
+  width: 130px;
+margin: 5px 0;
 }
 
 .vibe_right {
@@ -571,14 +574,20 @@ footer {
 }
 .home-b4.alpha.home_vibe {
   padding-top: 89px;
+  overflow: hidden;
 }
 .home-b4.alpha.home_vibe > .h-100 {
   height: calc(100vh - 89px) !important;
   margin-top: 15px;
 }
 .img-fluid.vibe_single {
-  width: 256px !important;
+  width: 415px !important;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
 }
+
 .copy {
   font-size: 12px;
   margin-top: 20px;
@@ -611,7 +620,7 @@ footer a:hover, footer a:active, footer a:focus {
   margin-top: 30px;
 }
 .img-fluid.foot_logo {
-  width: 180px;
+  width: 140px;
 }
 .mii {
   padding-left: 120px;
@@ -654,7 +663,7 @@ footer a:hover, footer a:active, footer a:focus {
   top: 0;
 }
 
-.fwi_right::after {
+.fwi_right::before {
   content: "";
   display: inline-block;
   height: 207px;
@@ -666,3 +675,73 @@ footer a:hover, footer a:active, footer a:focus {
   left: 47px;
   top: 0;
 }
+.col-12 {
+  -ms-flex: 0 0 100% !important;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+/* mq */
+
+@media only screen and (max-width:1440px) {
+  .img-fluid.vibe_single {
+    width: 256px !important;
+  }
+}
+
+@media only screen and (max-width:992px) {
+  #navbarResponsive {
+    border-top: 1px solid #eee;
+    margin: 10px -30px -8px;
+    padding: 15px 30px;
+}
+header.masthead {
+  padding-top: 73px;
+  padding-bottom: 0px;
+}
+.mii {
+  padding-left: 70px;
+}
+}
+
+@media only screen and (max-width:768px){
+  .fwi_left::after {
+
+    height: 1px;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 30px auto;
+    top: auto;
+    position: relative;
+
+}
+.ft__links.l_2 {
+
+  margin-top: 30px;
+
+}
+.fwi_right::before {
+  height: 1px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 30px auto;
+
+}
+.mii {
+
+  padding-left: 0;
+  text-align: center;
+
+}
+}
+
+@media only screen and (max-width: 440px) {
+  .copy {
+    font-size: 11px;
+  }
+}
+
