@@ -39,4 +39,24 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+
+  // $(".nav-item a").hover(function(){
+  //   $('nav .submenu').slideDown(10);
+  //   }, function(){
+  //     setTimeout(function(){ 
+
+  //       $('nav .submenu').slideUp(10);
+  //      }, 1500);
+    
+  // });
+  // $(".submenu ul").hover(function(){
+  //   $(this).slideDown(10);
+  //   }, function(){
+  //     setTimeout(function(){ 
+
+  //       $(this).slideUp(10);
+  //      }, 1500);
+    
+  // });
+
 })(jQuery); // End of use strict
