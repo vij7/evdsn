@@ -896,6 +896,48 @@ visibility: hidden;
   padding: 25px 1rem !important;
 }
 
+.vb_section.vl1.b42.dark_bg.h-100 .col-md-6.vl_img {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.vb_section.vl1.vl3.b45 {
+  background: url('../img/b45_bg.jpg') no-repeat center right 
+  #fff !important;
+  background-size: contain !important;
+  padding-top: 30px;
+}
+
+section.vb_section.vl1.b46 {
+  background: url('../img/b46_bg.jpg') no-repeat center 
+  #fff !important;
+  background-size: cover !important;
+  padding-top: 30px;
+}
+section.vb_section.vl1.b47 {
+  background: url('../img/b47_bg.jpg') no-repeat center 
+  #fff !important;
+  background-size: cover !important;
+  padding-top: 30px;
+}
+section.vb_section.vl1.b48 {
+  background: url('../img/b48_bg.jpg') no-repeat center 
+  #fff !important;
+  background-size: cover !important;
+  padding-top: 30px;
+}
+.col-md-6.vl_img.text-center.justify-content-center.b4_spec {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* mq */
 @media only screen and (max-width:1600px) {
   .img-fluid.vibe_single {
@@ -1005,6 +1047,22 @@ header + .vb_section.vl1.dark_bg .row {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+.submenu {
+  position: relative;
+  top: 0;
+}
+.nav-item a:hover + .submenu, .submenu:hover {
+  height: 130px;
+}
+.submenu ul {
+  display: block;
+}
+.submenu ul li {
+  width: 100%;
+  text-align: left;
+  padding: 0 0 10px;
+  font-size: 14px;
 }
 }
 
